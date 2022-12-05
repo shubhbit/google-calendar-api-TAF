@@ -16,12 +16,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - name: clone repo
-        run: |
-          pwd
       - name: Install dependencies
         run: |
-          cd google-calendar-api-TAF
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Test with pytest
