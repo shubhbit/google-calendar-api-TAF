@@ -3,14 +3,15 @@ import pytest
 
 
 class Event(object):
-    def __init__(self):
+    def __init__(self, token):
         self.event_url = (pytest.config['EVENT_URL']).replace("\n", "")
-        self.access_token = (pytest.config['ACCESS_TOKEN']).replace("\n", "")
+        # self.access_token = (pytest.config['ACCESS_TOKEN']).replace("\n", "")
+        self._access_token = token
 
     @property
     def header(self):
         return {'Content-Type': 'application/json',
-                'Authorization': 'Bearer {}'.format(self.access_token)}
+                'Authorization': 'Bearer {}'.format(self._access_token)}
 
     def get_event(self, event_id):
         get_event_url = "{0}/{1}".format(self.event_url, event_id)
