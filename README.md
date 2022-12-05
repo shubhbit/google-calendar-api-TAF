@@ -11,4 +11,4 @@ Test Automation framework for google calendar Event APIs
   > pytest --access-token=<access-token>
   
 
-![Calendar Event](https://github.com/shubhbit/google-calendar-api-TAF/actions/workflows/main.yml/badge.svg)(https://github.com/shubhbit/google-calendar-api-TAF/actions/workflows/main.yml)
+[![Calendar Event](https://github.com/shubhbit/google-calendar-api-TAF/actions/workflows/main.yml/badge.svg)](https://github.com/shubhbit/google-calendar-api-TAF/actions/workflows/main.yml)
