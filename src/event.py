@@ -5,7 +5,6 @@ import pytest
 class Event(object):
     def __init__(self, token):
         self.event_url = (pytest.config['EVENT_URL']).replace("\n", "")
-        # self.access_token = (pytest.config['ACCESS_TOKEN']).replace("\n", "")
         self._access_token = token
 
     @property
