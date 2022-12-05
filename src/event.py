@@ -28,7 +28,7 @@ class Event(object):
 
     def update_event(self, event_id, data):
         update_event_url = "{0}/{1}".format(self.event_url, event_id)
-        update_event_response = requests.post(
+        update_event_response = requests.patch(
             update_event_url, json=data, headers=self.header)
         return update_event_response
 

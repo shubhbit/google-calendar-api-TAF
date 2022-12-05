@@ -21,3 +21,9 @@ def event_init():
         pytest.event = Event()
     yield
     del pytest.event
+
+@pytest.fixture
+def invalidate_access_token():
+    pytest.event.access_token = (pytest.config['INVALID_ACCESS_TOKEN']).replace("\n", "")
+    yield
+    pytest.event.access_token = (pytest.config['ACCESS_TOKEN']).replace("\n", "")
