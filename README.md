@@ -1,6 +1,14 @@
 # google-calendar-api-TAF
-TAF to have test cases for google calendar APIs
+Test Automation framework for google calendar Event APIs
 
-![example workflow](https://github.com/shubhbit/google-calendar-api-TAF/actions/badge.svg)
+- if you want to run local on your system:
+  > git clone git@github.com:shubhbit/google-calendar-api-TAF.git
+- goto folder : google-calendar-api-TAF
+  > cd google-calendar-api-TAF
+- install dependencies 
+  > pip install -r requirements.txt
+- to run test, execute below command:
+  > pytest --access-token=<access-token>
+  
 
-https://github.com/shubhbit/google-calendar-api-TAF/actions
+![example workflow](https://github.com/shubhbit/google-calendar-api-TAF/actions/workflows/main.yml/badge.svg)
